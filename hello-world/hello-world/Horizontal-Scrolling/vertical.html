@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+	 <div class="notice">
+	  Use mousewheel to scroll sections!
+	</div>
+
+	<div id="vertical">
+	  <section class="active" style="background:SteelBlue">
+	    <div class="inner">Vertical 1</div>
+	  </section>
+	  <section style="background:DarkSlateBlue">
+	    <div class="inner">Vertical 2</div>
+	  </section>
+	  <section style="background:HotPink">
+	    <div class="inner">Vertical 3</div>
+	  </section>
+	</div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	// jQuery Next or First / Prev or Last plugin
+
+$.fn.nextOrFirst = function(selector){
+    var next = this.next(selector);
+    return (next.length) ? next : this.prevAll(selector).last();
+};
+
+$.fn.prevOrLast = function(selector){
+    var prev = this.prev(selector);
+    return (prev.length) ? prev : this.nextAll(selector).last();
+};
+
+// Scroll Functions
+
+function scrollSection(parent, dir) {
+	var active = "active",
+  		section = parent.find("."+active);
+  if (dir == "prev") {
+    section.removeClass(active).prevOrLast().addClass(active);
+  } else {
+    section.removeClass(active).nextOrFirst().addClass(active);
+  }
+}
+
+// Bind Scroll function to mouse wheel event
+
+$('#vertical').on('mousewheel wheel', function(e){
+  if (e.originalEvent.wheelDelta /-120 > 0) { // scroll up event
+    scrollSection($(this), "prev");
+  } else { // scroll down event
+    scrollSection($(this));
+  }
+});
+</script>
+
+</html>

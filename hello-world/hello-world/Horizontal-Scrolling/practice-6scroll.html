@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js"></script>
+
+</head>
+<body>
+  <div id="mainStack">
+    <div id="panel1" class="panel">
+      <a name="1"></a>
+      First panel
+    </div>
+    <div id="panel2" class="panel">
+      <a name="2"></a>
+      Second panel
+    </div>
+    <div id="panel3" class="panel">
+      <a name="3"></a>
+      Third panel
+    </div>
+    <div id="panel4" class="panel">
+      <a name="4"></a>
+      Fourth panel
+    </div>
+    <div id="panel5" class="panel">
+      <a name="5"></a>
+      Fifth panel
+    </div>
+    <div id="panel6" class="panel">
+      <a name="6"></a>
+      Sixth panel
+    </div>
+  </div>
+<style type="text/css">
+* {
+  box-sizing: border-box; /* so we don't have to worry about padding affecting width */
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font: normal 16px/1.2 sans-serif;
+  width:100%
+}
+
+#panel1, #panel2, #panel3, #panel4, #panel5, #panel6 {
+  /* all of these are for demo only: */
+  width: 100%;
+  height: 100vh; /* css3 way to say 100% of the viewport height. works on IE9+ and modern browsers. needs patch for iOS devices: https://gist.github.com/pburtchaell/e702f441ba9b3f76f587. also needs patch for print stylesheets (height:auto). */
+  text-align: center;
+  font-size: 50px;
+}
+#panel1, #panel3, #panel5 {
+  /* for demo only: */
+  background-color: khaki;
+}
+#panel2, #panel4, #panel6 {
+  /* for demo only: */
+  background-color: cadetblue;
+}
+</style>
+
+<script>
+//--- DEFINE a reusable animation function: ---//
+function scrollThere(targetElement, speed) {
+  // initiate an animation to a certain page element:
+  $('html, body').stop().animate(
+    { scrollTop: targetElement.offset().top }, // move window so target element is at top of window
+    speed, // speed in milliseconds
+    'swing' // easing
+  ); // end animate
+} // end scrollThere function definition
+
+
+//--- START NAV-ITEM CLICK EVENTS ---//
+// when the user clicks a nav item:
+$("#leftSidebar ul li a").click(function (e) {
+
+  e.preventDefault(); // don't jump like a typical html anchor
+
+  // find the index of the "#" character in the href string...
+  var startOfName = $(this).attr('href').indexOf("#"),
+      // ...then use it as the argument in the slice() method (add 1 so you don't include the # character).
+      clickRef = $(this).attr('href').slice(startOfName + 1),
+      targetEl = $('a[name=' + clickRef + ']'); // select the element this link is pointing to
+
+  // scroll there smoothly:
+  scrollThere(targetEl, 400);
+
+}); // end click
+//--- END NAV-ITEM CLICK EVENTS ---//
+
+
+//--- START SCROLL EVENTS ---//
+// detect a mousewheel event (note: relies on jquery mousewheel plugin):
+$(window).on('mousewheel', function (e) {
+
+  // get Y-axis value of each div:
+  var div1y = $('#panel1').offset().top,
+      div2y = $('#panel2').offset().top,
+      div3y = $('#panel3').offset().top,
+      div4y = $('#panel4').offset().top,
+      div5y = $('#panel5').offset().top,
+      div6y = $('#panel6').offset().top,
+      // get window's current scroll position:
+      lastScrollTop = $(this).scrollTop(),
+      // for getting user's scroll direction:
+      scrollDirection,
+      // for determining the previous and next divs to scroll to, based on lastScrollTop:
+      targetUp,
+      targetDown,
+      // for determining which of targetUp or targetDown to scroll to, based on scrollDirection:
+      targetElement;
+
+  // get scroll direction:
+  if ( e.deltaY > 0 ) {
+    scrollDirection = 'up';
+  } else if ( e.deltaY <= 0 ) {
+    scrollDirection = 'down';
+  } // end if
+
+  // prevent default behavior (page scroll):
+  e.preventDefault();
+
+  // condition: determine the previous and next divs to scroll to, based on lastScrollTop:
+  if (lastScrollTop === div1y) {
+    targetUp = $('#panel1');
+    targetDown = $('#panel2');
+  } else if (lastScrollTop === div2y) {
+    targetUp = $('#panel1');
+    targetDown = $('#panel3');
+  } else if (lastScrollTop === div3y) {
+    targetUp = $('#panel2');
+    targetDown = $('#panel4');
+  } else if (lastScrollTop === div4y) {
+    targetUp = $('#panel3');
+    targetDown = $('#panel5');
+  } else if (lastScrollTop === div5y) {
+    targetUp = $('#panel4');
+    targetDown = $('#panel6');
+  } else if (lastScrollTop === div6y) {
+    targetUp = $('#panel5');
+    targetDown = $('#panel6');
+  } else if (lastScrollTop < div2y) {
+    targetUp = $('#panel1');
+    targetDown = $('#panel2');
+  } else if (lastScrollTop < div3y) {
+    targetUp = $('#panel2');
+    targetDown = $('#panel3');
+  } else if (lastScrollTop < div4y) {
+    targetUp = $('#panel3');
+    targetDown = $('#panel4');
+  } else if (lastScrollTop < div5y) {
+    targetUp = $('#panel4');
+    targetDown = $('#panel5');
+  } else if (lastScrollTop < div6y) {
+    targetUp = $('#panel5');
+    targetDown = $('#panel6');
+  } else if (lastScrollTop > div6y) {
+    targetUp = $('#panel6');
+    targetDown = $('#panel6');
+  } // end else if
+
+  // condition: determine which of targetUp or targetDown to scroll to, based on scrollDirection:
+  if (scrollDirection === 'down') {
+    targetElement = targetDown;
+  } else if (scrollDirection === 'up') {
+    targetElement = targetUp;
+  } // end else if
+
+  // scroll smoothly to the target element:
+  scrollThere(targetElement, 400);
+
+}); // end on mousewheel event
+//--- END SCROLL EVENTS ---//
+
+
+</script>
+
+</body>
+</html>

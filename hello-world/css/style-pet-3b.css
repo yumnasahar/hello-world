@@ -1,0 +1,3867 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    /* allow percentages to be calculated without border and padding messing things up */
+}
+
+body {
+    background: #fff;
+    color: #666666;
+}
+
+a {
+    color: #ff6e42;
+    transition: 0.5s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #ff6e42;
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+
+.container-fluid {
+    margin: 0 auto !important;
+    padding: 0 !important;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+/*Hover effect on filter button*/
+area:hover {
+    position: absolute;
+    opacity: 0.1;
+    background: linear-gradient(to bottom right, #468f71 0%, #586978 100%);
+    width: 150px;
+    height: 51px;
+    top: 37%;
+    left: 29%;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/*================
+  Section 1 and 2
+================*/
+
+.contain-box {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+/*=========
+Background Typography Aa
+==========*/
+
+.typo-A {
+    font-family: 'Dosis';
+    font-size: 350pt;
+    color: #363947;
+    display: inline-flex;
+    font-weight: 100;
+    position: absolute;
+    top: 56%;
+    left: 41%;
+}
+
+.background-A {}
+
+#about-large-circle {
+    width: 20px;
+    height: 20px;
+    background: #459271;
+    border-radius: 50%;
+    position: relative;
+    left: 100%;
+    top: 140px;
+}
+
+#about-small-circle {
+    width: 10px;
+    height: 10px;
+    background: #4f594a;
+    border-radius: 50%;
+    position: relative;
+    left: 109%;
+    top: 110px;
+}
+
+
+/*==============
+Half style Number
+==============*/
+
+.halfStyle {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: pre;
+}
+
+.halfStyle:before {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 31%;
+    content: attr(data-content);
+    /* dynamic content for the pseudo element */
+    overflow: hidden;
+    pointer-events: none;
+    /* so the base char is selectable by mouse */
+    color: #fff;
+    /* for demo purposes */
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+
+/*===========
+section1 text
+============*/
+
+.logo {
+    position: absolute;
+    top: 10px;
+}
+
+.logo-pet {
+    width: 35vw;
+}
+
+.section1 {
+    position: absolute;
+    top: 0;
+}
+
+.number1-text-box {
+    position: relative;
+    top: 30px;
+}
+
+.number1 {
+    font-family: 'Roboto Slab';
+    line-height: 1.5em;
+    font-size: 150pt;
+    color: #c4c4c4;
+    display: inline-flex;
+    margin-left: -35px;
+    position: relative;
+    font-weight: 100;
+}
+
+.about {
+    font-family: 'Dosis';
+    display: inline-flex;
+    font-size: 42pt;
+    font-weight: 500;
+    color: #4f594a;
+    position: relative;
+    left: 0%;
+    bottom: 50px;
+}
+
+.about-app {
+    font-family: 'Dosis';
+    display: inline-flex;
+    font-weight: 100;
+    font-size: 50pt;
+    color: #459271;
+    position: relative;
+    left: 47%;
+    bottom: 175px;
+}
+
+.about-line {
+    border: 2px solid #4f594a;
+    border-radius: 5px;
+    width: 85px;
+    position: relative;
+    top: 65px;
+}
+
+.about-app-text-box {
+    position: relative;
+    left: 47%;
+    width: 26vw;
+    bottom: 150px;
+}
+
+.about-app-text {
+    font-family: 'Asap';
+    font-size: 20px;
+    color: #5b5b5b;
+}
+
+.img-box {
+    margin-left: 127px;
+    position: relative;
+    top: 125px;
+}
+
+.app-screen {
+    width: 25vw;
+}
+
+
+/*===========
+Section 2
+===========*/
+
+.num-2-box {
+    position: absolute;
+    bottom: 215px;
+}
+
+.number2 {
+    font-family: 'Roboto Slab';
+    font-weight: 100;
+    line-height: 1.5em;
+    font-size: 150pt;
+    color: #c4c4c4;
+    display: inline-flex;
+    margin-left: -35px;
+    position: relative;
+    bottom: 0;
+}
+
+.typography {
+    display: inline-flex;
+    font-size: 30pt;
+    font-family: 'Dosis';
+    font-weight: 600;
+    color: #ffffff;
+    position: relative;
+    bottom: 73px;
+    right: 1%;
+}
+
+.typography-line {
+    border: 2px solid #27cc94;
+    border-radius: 5px;
+    width: 75px;
+    position: relative;
+    bottom: 175px;
+    left: 80%;
+}
+
+.styling {
+    font-family: 'Dosis';
+    display: inline-flex;
+    font-size: 36pt;
+    font-weight: 100;
+    color: #459271;
+    position: relative;
+    bottom: 20px;
+    right: 42%;
+}
+
+.headline {
+    display: inline-flex;
+    font-size: 30pt;
+    font-family: 'Dosis';
+    font-weight: 100;
+    color: #fff;
+    position: relative;
+}
+
+.box {
+    height: 20px;
+    width: 19px;
+    position: relative;
+    top: 25px;
+    left: 20%;
+    border-radius: 4px;
+    background-color: #27cc94;
+}
+
+.box:hover {
+    height: 30px;
+    width: 29px;
+    transition: 1s;
+    transform: rotate(360deg);
+}
+
+.dosis-text {
+    display: inline-flex;
+    font-size: 36pt;
+    font-family: 'Dosis';
+    font-weight: 100;
+    color: #fff;
+    position: relative;
+}
+
+.head-textbox {
+    position: relative;
+    left: 35%;
+    margin-top: -110px;
+}
+
+.alpha-numeric {
+    position: relative;
+    margin-top: -200px;
+}
+
+.column {
+    float: left;
+    /* width: 130px; */
+    padding: 0 10px 0 0;
+    position: relative;
+    bottom: 14px;
+    left: 14%;
+}
+
+.divider1 {
+    display: inline-block;
+    width: 0;
+    height: 4em;
+    border-left: 4px solid #2c2124;
+    border-radius: 4px;
+    position: relative;
+    bottom: 10px;
+    right: 11.5%;
+}
+
+.divider2 {
+    display: inline-block;
+    width: 0;
+    height: 4em;
+    border-left: 4px solid #2c2124;
+    border-radius: 4px;
+    position: relative;
+    bottom: 10px;
+    /*  left: 0;*/
+}
+
+.a-n-text {
+    font-family: 'Dosis';
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.a-n-numbers {
+    font-family: 'Dosis';
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+
+/*============
+Section 3
+============*/
+
+.right-half-circle {
+    height: 90%;
+    width: 51%;
+    border-radius: 190px 0 0 190px;
+    background: #459271;
+    position: absolute;
+    bottom: 42%;
+    right: 15px;
+}
+
+.cat {
+    width: 25vw;
+    position: absolute;
+    top: 28%;
+    right: 15px;
+}
+
+#section3-large-circle {
+    width: 70px;
+    height: 70px;
+    background: #4f594a;
+    border-radius: 50%;
+    position: relative;
+    left: 15%;
+    top: 100px;
+}
+
+#section3-small-circle {
+    width: 15px;
+    height: 15px;
+    background: #27cc94;
+    border-radius: 50%;
+    position: relative;
+    left: 5%;
+    top: 10px;
+}
+
+#left-half-circle {
+    height: 35%;
+    width: 16%;
+    border-radius: 0 130px 130px 0;
+    background: #edecec;
+    position: relative;
+    left: 0;
+}
+
+.num3-textbox {
+    position: absolute;
+    top: 60px;
+}
+
+.number3 {
+    font-family: 'Roboto Slab';
+    font-weight: 100;
+    font-size: 135pt;
+    color: #459271;
+    display: inline-flex;
+    margin-left: 10%;
+    position: relative;
+    top: 60px;
+}
+
+.typography3 {
+    display: inline-flex;
+    font-size: 36px;
+    font-family: 'Dosis';
+    font-weight: 600;
+    color: #4f594a;
+    position: relative;
+    top: -140px;
+    left: 58%;
+}
+
+.paragraph3 {
+    display: inline-flex;
+    font-size: 34px;
+    font-family: 'Dosis';
+    font-weight: 400;
+    color: #27cc94;
+    position: relative;
+    top: -151px;
+    left: 59%;
+}
+
+.divider3 {
+    display: inline-block;
+    width: 0;
+    height: 19em;
+    border-left: 5px solid #ededed;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+}
+
+
+/*==============================
+Section3 Paragraph right Text Box
+==============================*/
+
+.para3asap {
+    position: relative;
+    bottom: 115px;
+}
+
+.box-para {
+    height: 18px;
+    width: 17px;
+    border-radius: 4px;
+    background-color: #27cc94;
+    position: relative;
+    left: 32%;
+    top: 220px;
+}
+
+.box-para:hover {
+    height: 28px;
+    width: 27px;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes shimmy {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(20px, 0px);
+    }
+}
+
+.paragraph3-text {
+    font-family: 'Asap';
+    color: #000;
+    font-size: 32px;
+    position: relative;
+    top: 280px;
+}
+
+.asap-text {
+    display: inline-flex;
+    font-family: 'Asap';
+    font-size: 40px;
+    color: #3b2c2d;
+    position: relative;
+    top: 200px;
+}
+
+.para-asap {
+    color: #4a3429;
+    font-size: 20px;
+    font-family: 'Asap';
+    position: relative;
+    top: 185px;
+}
+
+
+/*===============
+Section 4
+===============*/
+
+.section4-bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.leftside-text {
+    top: 400px;
+}
+
+.number4 {
+    font-family: 'Roboto Slab';
+    font-weight: 100;
+    line-height: 1.5em;
+    font-size: 135pt;
+    color: #fff;
+    display: inline-flex;
+    margin-left: -28px;
+    position: relative;
+    bottom: 260px;
+    letter-spacing: -10px;
+    z-index: 1;
+}
+
+.color-themebox {
+    position: absolute;
+    right: 13%;
+    top: -130px;
+    z-index: 1;
+}
+
+.colortext4 {
+    display: inline-flex;
+    font-size: 38px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    color: #fff;
+}
+
+.petcolor4 {
+    display: inline-flex;
+    font-size: 20px;
+    font-family: 'Dosis';
+    color: #fff;
+}
+
+.mainbox {
+    position: absolute;
+    left: 41%;
+    width: 70%;
+    top: 0;
+    z-index: 1;
+}
+
+.maintext4 {
+    display: inline-flex;
+    font-size: 32px;
+    font-family: 'Dosis';
+    color: #fff;
+}
+
+.colorever4b {
+    display: inline-flex;
+    font-size: 18px;
+    font-family: 'Dosis';
+    color: #fff;
+}
+
+.three-circles {
+    position: absolute;
+    top: 175px;
+}
+
+#circle {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #596778;
+    border-radius: 50%;
+}
+
+#circle2 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #392d34;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 30px;
+    top: 0;
+}
+
+svg#circle3 {
+  height: 250px;
+  width: 250px;
+  position:relative;
+  bottom:110px;
+}
+
+#circle3 {
+  stroke-dasharray: 534;
+  stroke-dashoffset: 700;
+  stroke-linecap: butt;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+
+#circle3:hover {
+  fill: #25a278;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 534;
+  stroke-width: 10;
+  transform:scale(1.1);
+}
+
+/*#circle3 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #27cc94;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 70px;
+    top: 0;
+}
+
+#circle3::before {
+    content: '';
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+#circle3:hover::before {
+    animation: sonar-effect 1s ease-in-out .1s infinite;
+}*/
+
+@keyframes sonar-effect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
+    }
+    100% {
+        box-shadow: 0 0 0 5px #fff, 0 0 10px 10px #fff, 0 0 0 10px #fff;
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.supportbox {
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+}
+
+.suporttext4 {
+    display: inline-flex;
+    font-size: 30px;
+    font-family: 'Dosis';
+    color: #fff;
+}
+
+.colorimp4b {
+    display: inline-flex;
+    font-size: 18px;
+    font-family: 'Dosis';
+    color: #fff;
+}
+
+.colorcontbox {
+    position: absolute;
+    top: 145px;
+}
+
+#circ1 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #596778;
+    border-radius: 50%;
+}
+
+#circ1:hover {
+    transform: scale(1.5);
+}
+
+#circ2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #404c5b;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 17px;
+}
+
+#circ2:hover {
+    transform: scale(1.5);
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
+#circ3 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #596c85;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 34px;
+}
+
+#circ3:hover {
+    transform: scale(1.5);
+    transition: all ease 1000ms;
+}
+
+#circ4 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #7c8da3;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 51px;
+}
+
+#circ4:hover {
+    transform: scale(1.5);
+}
+
+.contrast-text {
+    font-family: dosis;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    top: 60px;
+    left: 4px;
+}
+
+.othercontbox {
+    position: absolute;
+    top: 145px;
+    left: 120px;
+}
+
+#circl1 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #459271;
+    border-radius: 50%;
+}
+
+#circl1:hover {
+    transform: scale(1.5);
+}
+
+#circl2 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #27cc94;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 17px;
+}
+
+#circl2:hover {
+    transform: scale(1.5);
+}
+
+#circl3 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #cbd656;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 34px;
+}
+
+#circl3:hover {
+    transform: scale(1.5);
+}
+
+#circl4 {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #9955d3;
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 51px;
+}
+
+#circl4:hover {
+    margin-top: -20px;
+    transition: margin 1.5s;
+}
+
+.othercontrast {
+    font-family: dosis;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    top: 37px;
+    left: 122px;
+}
+
+
+/*========
+Second column 4th section
+========*/
+
+.petfeedbox {
+    position: absolute;
+    margin-left: 21%;
+    width: 45%;
+    bottom: -5%;
+    z-index: 2;
+}
+
+.pettext {
+    font-size: 36px;
+    font-family: 'Dosis';
+    color: #fff;
+    font-weight: 100;
+}
+
+.petpara {
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Asap';
+}
+
+.petimage {
+    position: relative;
+    margin-left: 16%;
+    top: 113%;
+    z-index: 3;
+}
+
+.pet-image {
+    width: 45vw;
+}
+
+.swip-box {
+    position: absolute;
+    margin-left: 60%;
+    bottom: -35%;
+    z-index: 1;
+}
+
+.swipe {
+    font-family: 'Dosis';
+    font-size: 35px;
+    color: #fff;
+}
+
+.arrow {
+    font-family: 'dosis';
+    color: #27cc94;
+    position: absolute;
+    bottom: -48px;
+    left: 27%;
+    font-size: 60px;
+    animation: buttonslide 1s ease-in-out infinite;
+    margin-right: 15px;
+}
+
+@keyframes buttonslide {
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(10px, 0);
+    }
+}
+
+#right-half-circle-sec4 {
+    height: 56%;
+    width: 18%;
+    border-radius: 200px 0 0 200px;
+    background: #459271;
+    position: absolute;
+    right: 15px;
+    top: 165%;
+    z-index: 2;
+    opacity: 0.4;
+}
+
+#sec4-small-circle {
+    width: 25px;
+    height: 25px;
+    background: #27cc94;
+    border-radius: 50%;
+    position: absolute;
+    right: 4%;
+    top: 151%;
+    z-index: 2;
+}
+
+
+/*==========
+Section5
+==========*/
+
+.section5-bg {
+    position: relative;
+    width: 100%;
+    top: 200px;
+}
+
+.num6-textbox {
+    position: relative;
+    bottom: 260%;
+}
+
+.number6 {
+    font-family: 'Roboto Slab';
+    font-weight: 200;
+    line-height: 1.5em;
+    font-size: 135pt;
+    color: #4c3b4b;
+    display: inline-flex;
+    margin-left: -31px;
+    position: relative;
+    top: 100px;
+}
+
+.vl {
+    border-left: 4px solid #544a54;
+    border-radius: 100px;
+    height: 335px;
+    position: absolute;
+    right: 72%;
+    top: 35%;
+}
+
+.vl2 {
+    border-left: 12px solid #fff;
+    border-radius: 45px;
+    height: 125px;
+    position: absolute;
+    left: 27%;
+    bottom: 37%;
+}
+
+.pet-breed-box {
+    position: relative;
+    bottom: 30px;
+    margin-left: 30%;
+    width: 100%;
+}
+
+.pettext6 {
+    display: inline-flex;
+    font-size: 55px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    color: #fff;
+    position: relative;
+}
+
+.pettext6-2 {
+    color: #fff;
+    position: relative;
+    display: inline-flex;
+    font-size: 40px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    bottom: 10px;
+}
+
+.pettext6-3 {
+    color: #404c5b;
+    position: relative;
+    display: inline-flex;
+    font-size: 70px;
+    font-family: 'Dosis';
+    bottom: 25px;
+    left: 2px;
+}
+
+.pettext6-4 {
+    color: #fff;
+    position: relative;
+    display: inline-flex;
+    font-size: 30px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    margin-left: 42%;
+    bottom: 45px;
+}
+
+.filter-image {
+    width: 26vw;
+}
+
+.calenderimg {
+    width: 26vw;
+}
+
+.filterimg {
+    position: absolute;
+    margin-left: 55%;
+    bottom: 120%;
+}
+
+.calenderimg {
+    margin-left: 8%;
+    z-index: 2;
+    position: relative;
+}
+
+.calendertext {
+    position: absolute;
+    margin-left: 30%;
+    bottom: 166%;
+}
+
+.schedule {
+    font-size: 44px;
+    color: #fff;
+    font-family: 'Dosis';
+    position: relative;
+}
+
+.calender {
+    font-size: 35px;
+    color: #392d34;
+    font-family: 'Dosis';
+    font-weight: 100;
+    position: relative;
+}
+
+.prodcard {
+    width: 26vw;
+}
+
+.blogimg {
+    width: 30vw;
+}
+
+.cardimgbox {
+    position: absolute;
+    margin-left: 17%;
+    bottom: 210%;
+}
+
+.blogimg {
+    position: absolute;
+    margin-top: 25px;
+}
+
+.subscribe-image {
+    width: 17vw;
+}
+
+.subscribeimg {
+    position: absolute;
+    margin-left: 80px;
+    bottom: 217%;
+}
+
+
+/*==============
+Section 6 
+==============*/
+
+.section6 {
+    margin-top: -584px;
+}
+
+.num7-textbox {
+    position: absolute;
+    left: 10%;
+    bottom: 85%;
+}
+
+.number7 {
+    font-family: 'Roboto Slab';
+    font-weight: 200;
+    line-height: 1.5em;
+    font-size: 135pt;
+    color: #cbd656;
+    display: inline-flex;
+    margin-left: -41px;
+    position: relative;
+    top: 60px;
+}
+
+.screentext7 {
+    font-family: 'Dosis';
+    font-size: 36pt;
+    color: #392b2e;
+    font-weight: 500;
+    position: relative;
+    right: 18px;
+    top: 30px;
+}
+
+.screentext7-2 {
+    font-family: 'Asap';
+    font-size: 17pt;
+    color: #392b2e;
+    font-weight: 100;
+    position: relative;
+    left: 25%;
+    bottom: 56px;
+}
+
+.screentext7-3 {
+    font-family: 'Asap';
+    font-size: 18pt;
+    color: #392b2e;
+    font-weight: 100;
+    position: relative;
+    right: 25px;
+    bottom: 30px;
+}
+
+.app1img {
+    position: relative;
+    top: 28%;
+}
+
+.app1 {
+    width: 28vw;
+}
+
+.app2img {
+    position: relative;
+    bottom: 33%;
+    left: 50%;
+    z-index: 2;
+}
+
+.app2 {
+    width: 28vw;
+}
+
+.app3img {
+    position: relative;
+    left: 50%;
+    bottom: 38%;
+}
+
+.app3 {
+    width: 48vw;
+}
+
+.app4img {
+    position: absolute;
+    top: 23%;
+    right: 10%;
+}
+
+.app4 {
+    width: 48vw;
+}
+
+.section6-right-half-circle {
+    height: 50vh;
+    width: 12vw;
+    border-radius: 270px 0 0 270px;
+    background: #f2f2f2;
+    position: absolute;
+    right: 0;
+    top: -25%;
+    opacity: 0.4;
+}
+
+#sec6-small-circle {
+    width: 75px;
+    height: 75px;
+    background: #dbedfe;
+    border-radius: 50%;
+    position: relative;
+    left: 66%;
+    bottom: 7%;
+}
+
+.half-line-separator {
+    height: 11px;
+    width: 15vw;
+    border-radius: 5px 0 0 5px;
+    background: #abbcd0;
+    position: relative;
+    left: 69%;
+    top: 13%;
+}
+
+#sec6-aboveapp1-circle {
+    width: 45px;
+    height: 45px;
+    background: #cbd655;
+    border-radius: 50%;
+    position: relative;
+    left: 20%;
+    top: 400px;
+}
+
+
+/*=============
+Section 7
+=============*/
+
+
+/*=====
+Container adjustment
+=====*/
+
+.section-7 {
+    position: relative;
+    bottom: 400px;
+}
+
+.iconbox {
+    text-align: center;
+    position: relative;
+    top: 85px;
+}
+
+.icon {
+    font-family: 'Dosis';
+    font-size: 70px;
+    color: #392b2e;
+}
+
+.set {
+    font-size: 70px;
+    font-family: 'Dosis';
+    color: #459271;
+}
+
+.icon-1024 {
+    position: relative;
+    right: 10px;
+    width: 12vw;
+}
+
+.icon-100 {
+    margin-top: 20px;
+    margin-left: -70px;
+    width: 11vw;
+}
+
+.icon-72 {
+    margin-top: 38px;
+    margin-left: -50px;
+    width: 10vw;
+}
+
+.icon-48 {
+    margin-top: 53px;
+    margin-left: -40px;
+    width: 9vw;
+}
+
+.icon-29 {
+    margin-top: 70px;
+    margin-left: -43px;
+    width: 8vw;
+}
+
+.icon-size1024 {
+    font-family: 'Dosis';
+    font-size: 25px;
+    position: relative;
+    top: 108px;
+    right: 146px;
+    color: #4a3429;
+}
+
+.icon-size100 {
+    font-family: 'Dosis';
+    font-size: 24px;
+    position: relative;
+    top: 110px;
+    right: 120px;
+    color: #4a3429;
+}
+
+.icon-size72 {
+    font-family: 'Dosis';
+    font-size: 23px;
+    position: relative;
+    top: 110px;
+    right: 107px;
+    color: #4a3429;
+}
+
+.icon-size48 {
+    font-family: 'Dosis';
+    font-size: 22px;
+    position: relative;
+    top: 112px;
+    right: 98px;
+    color: #4a3429;
+}
+
+.icon-size29 {
+    font-family: 'Dosis';
+    font-size: 19px;
+    position: relative;
+    top: 110px;
+    right: 88px;
+    color: #4a3429;
+}
+
+.footerbox {
+    text-align: center;
+    position: relative;
+    top: 331px;
+}
+
+.thank {
+    font-family: 'Dosis';
+    font-size: 70px;
+    color: #fff;
+    display: inline-flex;
+    position: relative;
+}
+
+.comstar {
+    font-family: 'Dosis';
+    font-size: 35px;
+    color: #fff;
+    display: inline-flex;
+    position: relative;
+    font-weight: 100;
+}
+
+#footer {
+    margin-top: -500px;
+}
+
+
+/*=====================================
+        Media qurey At 1024px
+=====================================*/
+
+@media screen and (min-width:1024px) and (max-width:1100px) {
+    /*==============   
+    Section 01
+==============*/
+    .number1-text-box {
+        position: relative;
+        bottom: 0;
+        left: -11px;
+    }
+    .number1 {
+        font-size: 130pt;
+        margin-left: -19px;
+    }
+    .about-app {
+        font-size: 38pt;
+        left: 56%;
+        bottom: 225px;
+    }
+    .about {
+        font-size: 35pt;
+        left: 56%;
+        bottom: 196px;
+    }
+    .about-line {
+        width: 70px;
+        top: 40px;
+    }
+    .about-app-text {
+        font-size: 16px;
+    }
+    .about-app-text-box {
+        left: 47%;
+        width: 27vw;
+        bottom: 205px;
+    }
+    /*image alignment section1*/
+    .img-box {
+        margin-left: 85px;
+        position: relative;
+        top: 80px;
+    }
+    .app-screen {
+        width: 26vw;
+    }
+    .typo-A {
+        font-size: 250pt;
+        top: 50%;
+        left: 42%;
+    }
+    #about-large-circle {
+        left: 106%;
+        top: 122px;
+    }
+    #about-small-circle {
+        left: 116%;
+        top: 86px;
+    }
+    /*==============   
+    Section 02
+==============*/
+    .number2 {
+        font-size: 125pt;
+        margin-left: -29px;
+        top: 50px;
+    }
+    .typography {
+        font-size: 25pt;
+        bottom: 10px;
+        right: 1%;
+    }
+    .styling {
+        font-size: 30pt;
+        font-weight: 100;
+        top: 33px;
+        right: 42%;
+    }
+    .head-textbox {
+        position: relative;
+        left: 36%;
+        top: 55px;
+    }
+    .dosis-text {
+        font-size: 30pt;
+    }
+    .headline {
+        font-size: 25pt;
+    }
+    .box {
+        height: 16px;
+        width: 17px;
+        top: 20px;
+        left: 20%;
+    }
+    .column {
+        top: 45px;
+        left: 16%;
+    }
+    .divider1 {
+        top: 47px;
+        right: 17%;
+    }
+    .divider2 {
+        top: 48px;
+        right: 2% !important;
+    }
+    /*==============   
+    Section 03
+==============*/
+    .right-half-circle {
+        height: 80%;
+        width: 53%;
+    }
+    .cat {
+        width: 30vw;
+        position: absolute;
+        top: 27%;
+        right: 15px;
+    }
+    .para-asap {
+        font-size: 18px;
+        width: 45vw;
+    }
+    #section3-large-circle {
+        width: 60px;
+        height: 60px;
+        left: 0;
+        top: 120px;
+    }
+    #section3-small-circle {
+        left: -15px;
+        top: 39px;
+    }
+    .box-para {
+        left: 45%;
+        top: 220px;
+    }
+    .para3asap {
+        left: 30px;
+        bottom: 150px;
+    }
+    .divider3 {
+        height: 18em;
+        right: -32px;
+    }
+    /*number 03*/
+    .number3 {
+        font-size: 125pt;
+        margin-left: 6%;
+        top: 60px;
+    }
+    .typography3 {
+        font-size: 30px;
+        top: -125px;
+        left: 58%;
+    }
+    .typography-line {
+        bottom: 98px;
+        left: 80%;
+    }
+    .paragraph3 {
+        font-size: 30px;
+        top: -135px;
+        left: 59%;
+    }
+    /*==============   
+    Section 04
+==============*/
+    .number4 {
+        font-size: 115pt;
+        margin-left: -37px;
+        bottom: 275px;
+    }
+    .colortext4 {
+        font-size: 30px;
+    }
+    .petcolor4 {
+        font-size: 18px;
+    }
+    .color-themebox {
+        right: 11%;
+        top: -164px;
+    }
+    .colorever4b {
+        font-size: 16px;
+    }
+    .maintext4 {
+        font-size: 30px;
+    }
+    .three-circles {
+        top: 125px;
+    }
+    .mainbox {
+        left: 40%;
+        width: 85%;
+        top: -86px;
+    }
+    .suporttext4 {
+        font-size: 29px;
+    }
+    .colorimp4b {
+        font-size: 17px;
+    }
+    .colorcontbox {
+        top: 155px;
+    }
+    .contrast-text {
+        top: 50px;
+        left: 4px;
+    }
+    .othercontbox {
+        top: 155px;
+        left: 105px;
+    }
+    .othercontrast {
+        top: 25px;
+        left: 105px;
+    }
+    .supportbox {
+        position: absolute;
+        left: 40%;
+        width: 22vw;
+        top: 145px;
+        z-index: 1;
+    }
+    .petimage {
+        margin-left: 16%;
+        top: 118%;
+    }
+    .petfeedbox {
+        margin-left: 21%;
+        bottom: -14%;
+    }
+    /*===================   
+    Section 05 or 06
+===================*/
+    .num6-textbox {
+        position: relative;
+        bottom: 208%;
+    }
+    .pet-breed-box {
+        bottom: 36px;
+        margin-left: 34%;
+    }
+    .number6 {
+        font-size: 125pt;
+    }
+    .vl {
+        right: 69%;
+        top: 33%;
+    }
+    .vl2 {
+        left: 146px;
+        bottom: 37%;
+    }
+    .filterimg {
+        margin-left: 55%;
+        bottom: 107%;
+    }
+    .calendertext {
+        margin-left: 25%;
+        bottom: 139%;
+    }
+    .cardimgbox {
+        margin-left: 17%;
+        bottom: 177%;
+    }
+    .subscribeimg {
+        margin-left: 58px;
+        bottom: 183%;
+    }
+    /*==================
+    Section 06 
+==================*/
+    .section6 {
+        margin-top: -400px;
+    }
+    .num7-textbox {
+        position: absolute;
+        left: 5%;
+        bottom: 88%;
+    }
+    .section6-right-half-circle {
+        height: 52vh;
+        width: 14vw;
+        right: 15px;
+        top: -37%;
+    }
+    #sec6-small-circle {
+        left: 65%;
+        bottom: 16%;
+    }
+    .number7 {
+        font-size: 125pt;
+    }
+    .screentext7 {
+        font-size: 32pt;
+    }
+    .screentext7-2 {
+        font-size: 15pt;
+        left: 29%;
+        bottom: 56px;
+    }
+    .screentext7-3 {
+        font-size: 16pt;
+        right: 25px;
+        bottom: 30px;
+    }
+    .app2img {
+        bottom: 36%;
+        left: 48%;
+    }
+    #sec6-aboveapp1-circle {
+        top: 200px;
+    }
+    .app1img {
+        top: 23%;
+    }
+    .app3img {
+        left: 56%;
+        bottom: 41%;
+    }
+    .app4 {
+        width: 52vw;
+    }
+    .app4img {
+        position: absolute;
+        top: 20%;
+        right: 9%;
+    }
+    /*==============   
+    Section 07
+==============*/
+    .iconbox {
+        top: 55px;
+    }
+    .icon-1024 {
+        right: 35px;
+        width: 12vw;
+    }
+    .icon-size1024 {
+        font-size: 23px;
+        top: 95px;
+        right: 146px;
+    }
+    .icon-size100 {
+        font-size: 22px;
+        top: 97px;
+        right: 100px;
+    }
+    .icon-100 {
+        margin-top: 16px;
+        margin-left: -92px;
+        width: 11vw;
+    }
+    .icon-72 {
+        margin-top: 29px;
+        margin-left: -60px;
+    }
+    .icon-size72 {
+        font-size: 22px;
+        top: 97px;
+        right: 88px;
+    }
+    .icon-48 {
+        margin-top: 43px;
+        margin-left: -48px;
+    }
+    .icon-size48 {
+        font-size: 21px;
+        top: 97px;
+        right: 82px;
+    }
+    .icon-29 {
+        margin-top: 54px;
+    }
+    .icon-size29 {
+        font-size: 19px;
+        top: 98px;
+        right: 72px;
+    }
+    .footerbox {
+        text-align: center;
+        position: relative;
+        top: 285px;
+    }
+    #footer {
+        margin-top: -450px;
+    }
+}
+
+
+/*===================================================================
+    Media qurey to align section 2 numbers and alphabets with divider
+====================================================================*/
+
+@media screen and (min-width:1271px) and (max-width:1300px) {
+    /* Section 2*/
+    .column {
+        top: 35px;
+        left: 14.5%;
+    }
+    .divider1 {
+        top: 36px;
+        right: 12%;
+    }
+    .divider2 {
+        top: 38px;
+    }
+}
+
+
+/*===================================================================
+    Media qurey to align section 2 numbers and alphabets with divider
+====================================================================*/
+
+@media screen and (min-width:1246px) and (max-width:1270px) {
+    /* Section 2*/
+    .column {
+        top: 35px;
+        left: 15%;
+    }
+    .divider1 {
+        top: 36px;
+        right: 12%;
+    }
+    .divider2 {
+        top: 38px;
+    }
+}
+
+
+/*===================================================================
+    Media qurey to align section 2 numbers and alphabets with divider
+====================================================================*/
+
+@media screen and (min-width:1231px) and (max-width:1245px) {
+    /* Section 2*/
+    .column {
+        top: 35px;
+        left: 15%;
+    }
+    .divider1 {
+        top: 36px;
+        right: 12.5%;
+    }
+    .divider2 {
+        top: 38px;
+    }
+}
+
+
+/*===================================================================
+    Media qurey to align section 2 numbers and alphabets with divider
+====================================================================*/
+
+@media screen and (min-width:1200px) and (max-width:1230px) {
+    /* Section 2*/
+    .num-2-box {
+        position: absolute;
+        bottom: 175px;
+    }
+    .a-n-text {
+        font-size: 19px;
+    }
+    .column {
+        top: 35px;
+        left: 15.5%;
+    }
+    .divider1 {
+        top: 36px;
+        right: 11%;
+    }
+    .divider2 {
+        top: 38px;
+    }
+}
+
+
+/*=====================================
+    Media qurey 1200px to 1300px
+=====================================*/
+
+@media screen and (min-width:1200px) and (max-width:1290px) {
+    /* Section 1*/
+    .about-app{
+        font-size: 45pt;
+        left: 49%;
+    }
+    .about {
+        left: -3%;
+        font-size:38pt;
+    }
+    .about-app-text-box {
+        left: 47%;
+        width: 26vw;
+        bottom: 150px;
+    }
+    .about-app-text {
+        font-size: 17px;
+    }
+    /* Section 2*/
+    .num-2-box {
+        position: absolute;
+        bottom: 175px;
+    }
+    /*section 3*/
+    .right-half-circle {
+        height: 90%;
+        width: 55%;
+    }
+    .cat {
+        width: 28vw;
+        position: absolute;
+        top: 27%;
+    }
+    .divider3 {
+        right: -35px;
+    }
+    #section3-large-circle {
+        left: 4%;
+        top: 100px;
+    }
+    #section3-small-circle {
+        left: -8%;
+        top: 10px;
+    }
+    .para3asap {
+        position: relative;
+        bottom: 122px;
+        left: 38px;
+    }
+    .color-themebox {
+        right: 4%;
+    }
+    .mainbox {
+        left: 44%;
+        top: -25px;
+    }
+    .supportbox {
+        left: 44%;
+        top: 53%;
+    }
+    .colorcontbox {
+        top: 160px;
+    }
+    .othercontbox {
+        top: 160px;
+    }
+    .contrast-text {
+        top: 50px;
+    }
+    .othercontrast {
+        top: 26px;
+        left: 122px;
+    }
+    .leftside-text {
+        top: 385px;
+    }
+    .suporttext4 {
+        width: 20vw;
+    }
+    /*section 6*/
+    .petimage {
+        top: 118%;
+    }
+    .petfeedbox {
+        bottom: -12%;
+    }
+    .swip-box {
+        bottom: -42%;
+    }
+    .num6-textbox {
+        bottom: 238%;
+    }
+    .vl {
+        right: 71.55%;
+        top: 35%;
+    }
+    .filterimg {
+        bottom: 114%;
+    }
+    .calendertext {
+        margin-left: 30%;
+        bottom: 154%;
+    }
+    .cardimgbox {
+        bottom: 195%;
+    }
+    .subscribeimg {
+        margin-left: 72px;
+        bottom: 201%;
+    }
+    .section6-right-half-circle {
+        height: 54vh;
+        width: 13vw;
+        right: 15px;
+        top: -25%;
+    }
+    /*icon box*/
+    .icon-1024 {
+        right: 35px;
+        width: 12vw;
+    }
+    .icon-size1024 {
+        font-size: 23px;
+        top: 95px;
+        right: 146px;
+    }
+    .icon-size100 {
+        font-size: 22px;
+        top: 97px;
+        right: 100px;
+    }
+    .icon-100 {
+        margin-top: 16px;
+        margin-left: -92px;
+        width: 11vw;
+    }
+    .icon-72 {
+        margin-top: 29px;
+        margin-left: -60px;
+    }
+    .icon-size72 {
+        font-size: 22px;
+        top: 97px;
+        right: 88px;
+    }
+    .icon-48 {
+        margin-top: 43px;
+        margin-left: -48px;
+    }
+    .icon-size48 {
+        font-size: 21px;
+        top: 97px;
+        right: 82px;
+    }
+    .icon-29 {
+        margin-top: 54px;
+    }
+    .icon-size29 {
+        font-size: 19px;
+        top: 98px;
+        right: 72px;
+    }
+}
+
+
+/*=====================================
+Media qurey At 1400px at 90% zoom level
+=====================================*/
+
+@media screen and (min-width: 1400px) {
+    /*==============   
+    Section 1
+==============*/
+    .typo-A {
+        top: 62%;
+        left: 41%;
+    }
+    .about-app {
+        left: 43%;
+    }
+    .img-box {
+        margin-left: 138px;
+        position: relative;
+        top: 135px;
+    }
+    /*==============   
+    Section 2
+==============*/
+    .column {
+        left: 12.5%;
+    }
+    .divider1 {
+        right: 11%;
+    }
+    .a-n-text {
+        font-family: 'Dosis';
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 2px;
+    }
+    /*section 03*/
+    .right-half-circle {
+        height: 100%;
+        width: 47%;
+        border-radius: 255px 0 0 255px;
+        bottom: 42%;
+    }
+    .divider3 {
+        height: 19em;
+        border-radius: 4px;
+        right: -35px;
+        top: 37%;
+    }
+    .cat {
+        width: 27vw;
+        position: absolute;
+        top: 19%;
+        right: 15px;
+    }
+    .para3asap {
+        position: relative;
+        bottom: 115px;
+        left: 5%;
+    }
+    .num3-textbox {
+        left: 15%;
+    }
+    /*============   
+    Section 5 
+============*/
+    .leftside-text {
+        top: 460px;
+    }
+    .color-themebox {
+        right: 17%;
+    }
+    .petimage {
+        top: 112%;
+    }
+    .petfeedbox {
+        margin-left: 21%;
+        width: 45%;
+        bottom: -5%;
+    }
+    .swip-box {
+        margin-left: 60%;
+        bottom: -35%;
+    }
+    .subscribeimg {
+        position: absolute;
+        margin-left: 29%;
+        bottom: 226%;
+    }
+    .subscribe-image {
+        width: 16vw;
+    }
+    .cardimgbox {
+        margin-left: 19%;
+        bottom: 220%;
+    }
+    .filterimg {
+        bottom: 126%;
+    }
+    /*============   
+    Section 6 
+============*/
+    .num6-textbox {
+        position: relative;
+        bottom: 284%;
+    }
+}
+
+
+/*=====================================
+Media qurey At 1600px at 80% zoom level
+=====================================*/
+
+@media screen and (min-width: 1600px) {
+    /*section1*/
+    .number1-text-box {
+        position: relative;
+        top: 100px;
+    }
+    .about-app {
+        font-size: 55pt;
+        left: 40%;
+        bottom: 185px;
+    }
+    .about {
+        font-size: 45pt;
+        left: 1%;
+        bottom: 60px;
+    }
+    .about-app-text-box {
+        left: 41%;
+        width: 28vw;
+    }
+    .about-app-text {
+        font-size: 25px;
+    }
+    .img-box {
+        margin-left: 141px;
+        top: 141px;
+    }
+    .typo-A {
+        top: 62%;
+        left: 40%;
+        font-size: 400pt;
+    }
+    /*section 02*/
+    .num-2-box {
+        position: absolute;
+        bottom: 300px;
+    }
+    .head-textbox {
+        position: relative;
+        left: 37%;
+        top: 40px;
+    }
+    .a-n-text {
+        font-size: 26px;
+    }
+    .column {
+        bottom: 25px;
+        left: 12%;
+    }
+    .divider1 {
+        right: 162px;
+        height: 5em;
+        border-left: 5px solid #2c2124;
+        bottom: 22px;
+    }
+    .divider2 {
+        height: 5em;
+        border-left: 5px solid #2c2124;
+        bottom: 22px;
+        left: 10px;
+    }
+    /*section 03*/
+    .right-half-circle {
+        height: 93%;
+        width: 49%;
+        bottom: 47%;
+    }
+    .number3 {
+        font-size: 150pt;
+    }
+    .paragraph3 {
+        font-size: 38px;
+        top: -174px;
+        left: 59%;
+    }
+    .typography3 {
+        font-size: 40px;
+        top: -162px;
+        left: 58%;
+    }
+    .num3-textbox {
+        top: 60px;
+        left: 55px;
+    }
+    .para-asap {
+        font-size: 24px;
+        top: 185px;
+    }
+    .para3asap {
+        position: relative;
+        bottom: 115px;
+        left: 60px;
+    }
+    .paragraph3-text {
+        font-size: 38px;
+        top: 280px;
+    }
+    .asap-text {
+        font-size: 45px;
+        top: 200px;
+    }
+    /*section 04*/
+    .color-themebox {
+        right: 20%;
+        top: -115px;
+    }
+    .number4 {
+        font-size: 150pt;
+        margin-left: -32px;
+    }
+    .colortext4 {
+        font-size: 40px;
+    }
+    .petcolor4 {
+        font-size: 22px;
+    }
+    .maintext4 {
+        font-size: 38px;
+    }
+    .colorever4b {
+        font-size: 22px;
+    }
+    .mainbox {
+        left: 39%;
+        top: 10px;
+    }
+    .suporttext4 {
+        font-size: 36px;
+    }
+    .colorimp4b {
+        font-size: 24px;
+    }
+    .colorcontbox {
+        top: 220px;
+    }
+    .othercontbox {
+        top: 220px;
+        left: 120px;
+    }
+    .othercontrast {
+        font-size: 17px;
+        top: 45px;
+        left: 122px;
+    }
+    .contrast-text {
+        font-size: 17px;
+        top: 69px;
+        left: 2px;
+    }
+    .pettext {
+        font-size: 50px;
+    }
+    .petpara {
+        font-size: 23px;
+    }
+    /*section 06*/
+    .num6-textbox {
+        position: relative;
+        bottom: 300%;
+    }
+    .number6 {
+        line-height: 1.5em;
+        font-size: 150pt;
+        margin-left: -35px;
+    }
+    .vl {
+        right: 75%;
+        top: 35%;
+    }
+    .vl2 {
+        left: 24%;
+        bottom: 37%;
+    }
+    .pet-breed-box {
+        bottom: 30px;
+        margin-left: 27%;
+    }
+    .filterimg {
+        bottom: 129%;
+    }
+    .cardimgbox {
+        margin-left: 18%;
+        bottom: 230%;
+    }
+    .subscribeimg {
+        margin-left: 30%;
+        bottom: 236%;
+    }
+    .calendertext {
+        margin-left: 35%;
+        bottom: 188%;
+    }
+    .section6-right-half-circle {
+        height: 55vh;
+        width: 12vw;
+        right: 14px;
+        top: -28%;
+    }
+    /*section 07*/
+    .number7 {
+        font-size: 150pt;
+    }
+    .screentext7 {
+        font-size: 45pt;
+        right: 18px;
+        top: 30px;
+    }
+    .screentext7-2 {
+        font-size: 22pt;
+        left: 25%;
+        bottom: 56px;
+    }
+    .screentext7-3 {
+        font-size: 22pt;
+    }
+    .app2img {
+        bottom: 30%;
+        left: 50%;
+    }
+    .app1img {
+        top: 30%;
+    }
+    .app3 {
+        width: 50vw;
+    }
+    .app4 {
+        width: 50vw;
+    }
+    .app4img {
+        top: 25%;
+        right: 8%;
+    }
+    .icon-size1024 {
+        font-size: 27px;
+        top: 122px;
+        right: 164px;
+    }
+    .icon-size100 {
+        font-size: 27px;
+        top: 123px;
+        right: 130px;
+    }
+    .icon-size72 {
+        font-size: 27px;
+        top: 125px;
+        right: 122px;
+    }
+    .icon-size48 {
+        font-size: 27px;
+        top: 125px;
+        right: 115px;
+    }
+    .icon-size29 {
+        font-size: 24px;
+        top: 124px;
+        right: 102px;
+    }
+    .section-7 {
+        bottom: 500px;
+    }
+}
+
+
+/*=====================================
+Media qurey At 1750px at 75% zoom level
+=====================================*/
+
+@media screen and (min-width: 1750px) {
+    /*section1*/
+    .number1-text-box {
+        position: relative;
+        top: 100px;
+        left: 15px;
+    }
+    .number1 {
+        margin-left: -50px;
+    }
+    #about-small-circle {
+        left: 95%;
+        top: 98px;
+    }
+    #about-large-circle {
+        left: 86%;
+        top: 130px;
+    }
+    .about-app {
+        font-size: 55pt;
+        left: 31%;
+        bottom: 185px;
+    }
+    .about-app-text-box {
+        left: 37%;
+        width: 28vw;
+    }
+    .about-app-text {
+        font-size: 27px;
+    }
+    .about-line {
+        border: 2px solid #4f594a;
+        width: 100px;
+        top: 70px;
+    }
+    .num-2-box {
+        bottom: 300px;
+        left: 19px;
+    }
+    .column {
+        bottom: 25px;
+        left: 11.5%;
+    }
+    .a-n-text {
+        font-size: 28px;
+    }
+    .divider1 {
+        right: 168px;
+    }
+    .divider2 {
+        left: 18px;
+    }
+    .img-box {
+        margin-left: 160px;
+        top: 154px;
+    }
+    .typo-A {
+        top: 62%;
+        left: 43%;
+    }
+    /*section 3*/
+    .right-half-circle {
+        height: 112%;
+        width: 49%;
+        bottom: 40%;
+    }
+    .cat {
+        width: 27vw;
+        position: absolute;
+        top: 17%;
+        right: 15px;
+    }
+    .num3-textbox {
+        top: 60px;
+        left: 130px;
+    }
+    .box-para {
+        height: 21px;
+        width: 20px;
+        left: 30%;
+        top: 217px;
+    }
+    .color-themebox {
+        right: 25%;
+    }
+    .othercontrast {
+        top: 90px;
+    }
+    .contrast-text {
+        top: 115px;
+    }
+    .num6-textbox {
+        bottom: 300%;
+    }
+    .pettext6 {
+        font-size: 65px;
+    }
+    .pettext6-2 {
+        font-size: 45px;
+    }
+    .pettext6-3 {
+        font-size: 76px;
+    }
+    .pettext6-4 {
+        font-size: 38px;
+        top: -32px;
+        right: 8%;
+    }
+    .vl {
+        right: 77%;
+        top: 35%;
+        height: 410px;
+    }
+    .vl2 {
+        left: 196px;
+        bottom: 35%;
+        height: 155px;
+    }
+    .filterimg {
+        bottom: 133%;
+        margin-left: 54%;
+    }
+    .calendertext {
+        margin-left: 37%;
+        bottom: 193%;
+    }
+    .cardimgbox {
+        margin-left: 16%;
+        bottom: 239%;
+    }
+    .subscribeimg {
+        margin-left: 30%;
+        bottom: 245%;
+    }
+    /*section 7*/
+    .section6 {
+        margin-top: -630px;
+    }
+    .screentext7-2 {
+        left: 22%;
+    }
+    .screentext7-3 {
+        font-size: 24pt;
+    }
+    .num7-textbox {
+        left: 15%;
+        bottom: 85%;
+    }
+    .app2img {
+        bottom: 29%;
+        left: 50%;
+    }
+    .app1img {
+        top: 31%;
+    }
+    .app3img {
+        left: 50%;
+        bottom: 34%;
+    }
+    .app4img {
+        top: 27%;
+        right: 6%;
+    }
+    .icon-size1024 {
+        font-size: 27px;
+        top: 132px;
+        right: 164px;
+    }
+    .icon-size100 {
+        font-size: 27px;
+        top: 135px;
+        right: 130px;
+    }
+    .icon-size72 {
+        font-size: 27px;
+        top: 135px;
+        right: 122px;
+    }
+    .icon-size48 {
+        font-size: 27px;
+        top: 135px;
+        right: 115px;
+    }
+    .icon-size29 {
+        font-size: 24px;
+        top: 134px;
+        right: 102px;
+    }
+    .section-7 {
+        bottom: 560px;
+    }
+}
+
+
+/*=====================================
+Media qurey At 1900px 
+=====================================*/
+
+@media screen and (min-width: 1900px) {
+    /*section 1 and 2*/
+    .number1 {
+        font-size: 175pt;
+        margin-left: -55px;
+    }
+    .about {
+        font-size: 50pt;
+    }
+    .about-app {
+        font-size: 60pt;
+        left: 34%;
+        bottom: 200px;
+    }
+    .about-line {
+        border: 3px solid #4f594a;
+        width: 100px;
+        top: 80px;
+    }
+    .about-app-text {
+        font-size: 32px;
+    }
+    .about-app-text-box {
+        left: 33%;
+    }
+    .img-box {
+        margin-left: 183px;
+        top: 178px;
+    }
+    .typo-A {
+        top: 67%;
+        left: 44%;
+        font-size: 425pt;
+    }
+    .number2 {
+        font-size: 175pt;
+        margin-left: -44px;
+    }
+    .typography {
+        font-size: 36pt;
+    }
+    .styling {
+        font-size: 40pt;
+        bottom: 15px;
+        right: 43%;
+    }
+    .typography-line {
+        border: 3px solid #27cc94;
+        width: 100px;
+        bottom: 190px;
+        left: 80%;
+    }
+    .headline {
+        font-size: 40pt;
+    }
+    .dosis-text {
+        font-size: 45pt;
+    }
+    .num-2-box {
+        bottom: 360px;
+        left: 19px;
+    }
+    .column {
+        bottom: 85px;
+        left: 11.5%;
+    }
+    .a-n-text {
+        font-size: 30px;
+    }
+    .a-n-numbers {
+        font-size: 44px;
+    }
+    .divider1 {
+        height: 6em;
+        right: 220px;
+        bottom: 85px;
+        border-left: 6px solid #2c2124;
+    }
+    .divider2 {
+        left: -23px;
+        height: 6em;
+        border-left: 6px solid #2c2124;
+        bottom: 85px;
+    }
+    /*section 03*/
+    .right-half-circle {
+        height: 107%;
+        width: 53%;
+        bottom: 44%;
+        border-radius: 285px 0 0 285px;
+    }
+    .divider3 {
+        height: 27em;
+        border-radius: 4px;
+        right: -35px;
+        top: 28%;
+        border-left: 8px solid #ededed;
+    }
+    .num3-textbox {
+        top: 80px;
+        left: 130px;
+    }
+    .number3 {
+        font-size: 160pt;
+    }
+    .typography3 {
+        font-size: 45px;
+        top: -180px;
+        left: 58%;
+    }
+    .paragraph3 {
+        font-size: 42px;
+        top: -190px;
+        left: 59%;
+    }
+    .paragraph3-text {
+        font-size: 45px;
+        top: 280px;
+    }
+    .box-para {
+        height: 25px;
+        width: 24px;
+        left: 34%;
+        top: 209px;
+    }
+    .asap-text {
+        font-size: 50px;
+        top: 200px;
+    }
+    .para-asap {
+        font-size: 30px;
+        top: 185px;
+    }
+    /*section 04*/
+    #right-half-circle-sec4 {
+        border-radius: 300px 0 0 300px;
+    }
+    .leftside-text {
+        top: 500px;
+    }
+    .number4 {
+        font-size: 175pt;
+        margin-left: -32px;
+    }
+    .colortext4 {
+        font-size: 50px;
+    }
+    .petcolor4 {
+        font-size: 30px;
+    }
+    .color-themebox {
+        right: 23%;
+        top: -98px;
+    }
+    .maintext4 {
+        font-size: 50px;
+    }
+    .colorever4b {
+        font-size: 27px;
+    }
+    .three-circles {
+        position: absolute;
+        top: 210px;
+    }
+    #circle {
+        width: 150px;
+        height: 150px;
+    }
+    #circle2 {
+        width: 150px;
+        height: 150px;
+    }
+    #circle3 {
+        width: 150px;
+        height: 150px;
+    }
+    .mainbox {
+        left: 36%;
+        top: 45px;
+    }
+    .suporttext4 {
+        font-size: 50px;
+    }
+    .colorimp4b {
+        font-size: 30px;
+    }
+    .colorcontbox {
+        top: 285px;
+    }
+    .contrast-text {
+        font-size: 20px;
+    }
+    #circ1 {
+        width: 45px;
+        height: 45px;
+    }
+    #circ2 {
+        width: 45px;
+        height: 45px;
+    }
+    #circ3 {
+        width: 45px;
+        height: 45px;
+    }
+    #circ4 {
+        width: 45px;
+        height: 45px;
+    }
+    .othercontbox {
+        top: 285px;
+        left: 200px;
+    }
+    .othercontrast {
+        top: 90px;
+        font-size: 20px;
+        left: 195px;
+    }
+    #circl1 {
+        width: 45px;
+        height: 45px;
+    }
+    #circl2 {
+        width: 45px;
+        height: 45px;
+    }
+    #circl3 {
+        width: 45px;
+        height: 45px;
+    }
+    #circl4 {
+        width: 45px;
+        height: 45px;
+    }
+    .supportbox {
+        left: 36%;
+        top: 57%;
+    }
+    .swipe {
+        font-size: 50px;
+    }
+    .num6-textbox {
+        bottom: 310%;
+    }
+    .number6 {
+        font-size: 175pt;
+    }
+    .vl2 {
+        left: 221px;
+    }
+    .pettext6-4 {
+        font-size: 38px;
+        top: -32px;
+        right: 11%;
+    }
+    .pet-breed-box {
+        bottom: 30px;
+    }
+    .pettext6 {
+        font-size: 75px;
+    }
+    .pettext6-3 {
+        font-size: 85px;
+    }
+    .filterimg {
+        bottom: 137%;
+    }
+    .schedule {
+        font-size: 50px;
+    }
+    .calender {
+        font-size: 45px;
+    }
+    .calendertext {
+        margin-left: 37%;
+        bottom: 196%;
+    }
+    .cardimgbox {
+        bottom: 245%;
+    }
+    .subscribeimg {
+        bottom: 250%;
+    }
+    /*section 07*/
+    .section6 {
+        margin-top: -715px;
+    }
+    .number7 {
+        font-size: 175pt;
+    }
+    .screentext7 {
+        font-size: 50pt;
+    }
+    .screentext7-2 {
+        left: 24%;
+        font-size: 24pt;
+    }
+    .screentext7-3 {
+        font-size: 27pt;
+    }
+    .section6-right-half-circle {
+        width: 13vw;
+    }
+    .footerbox {
+        top: 438px;
+    }
+    .icon-size1024 {
+        font-size: 32px;
+        top: 175px;
+        right: 200px;
+    }
+    .icon-size100 {
+        font-size: 32px;
+        top: 177px;
+        right: 166px;
+    }
+    .icon-size72 {
+        font-size: 32px;
+        top: 175px;
+        right: 156px;
+    }
+    .icon-size48 {
+        font-size: 32px;
+        top: 176px;
+        right: 140px;
+    }
+    .icon-29 {
+        margin-left: -70px;
+    }
+    .icon-size29 {
+        font-size: 30px;
+        top: 171px;
+        right: 127px;
+    }
+}
+
+
+/*=====================================
+Media qurey At 2100 px 
+=====================================*/
+
+@media screen and (min-width: 2100px) {
+    /*section 1 and 2*/
+    .number1-text-box {
+        position: relative;
+        top: 200px;
+        left: 15px;
+    }
+    .number1 {
+        font-size: 215pt;
+        margin-left: -65px;
+    }
+    .about {
+        font-size: 65pt;
+        bottom: 74px;
+    }
+    .about-app {
+        font-size: 75pt;
+        left: 32%;
+        bottom: 240px;
+    }
+    .about-line {
+        width: 160px;
+        top: 105px;
+    }
+    .about-app-text {
+        font-size: 44px;
+    }
+    #about-large-circle {
+        left: 86%;
+        top: 152px;
+        width: 30px;
+        height: 30px;
+    }
+    #about-small-circle {
+        width: 15px;
+        height: 14px;
+    }
+    .img-box {
+        margin-left: 244px;
+        top: 260px;
+    }
+    .typo-A {
+        top: 74%;
+        left: 45%;
+        font-size: 500pt;
+    }
+    .number2 {
+        font-size: 215pt;
+        margin-left: -53px;
+    }
+    .typography {
+        font-size: 50pt;
+    }
+    .styling {
+        font-size: 50pt;
+        bottom: 30px;
+        right: 46%;
+    }
+    .typography {
+        font-size: 50pt;
+        bottom: 106px;
+    }
+    .typography-line {
+        border: 4px solid #27cc94;
+        width: 110px;
+        bottom: 247px;
+    }
+    .headline {
+        font-size: 55pt;
+    }
+    .dosis-text {
+        font-size: 55pt;
+    }
+    .box {
+        height: 33px;
+        width: 32px;
+        top: 47px;
+    }
+    .head-textbox {
+        position: relative;
+        left: 34%;
+        top: 0px;
+    }
+    .num-2-box {
+        bottom: 442px;
+    }
+    .a-n-text {
+        font-size: 50px;
+    }
+    .column {
+        bottom: 170px;
+        left: 10.5%;
+    }
+    .a-n-numbers {
+        font-size: 75px;
+    }
+    .divider1 {
+        height: 9em;
+        right: 425px;
+        bottom: 160px;
+        border-left: 8px solid #2c2124;
+    }
+    .divider2 {
+        left: -120px;
+        height: 9em;
+        border-left: 8px solid #2c2124;
+        bottom: 157px;
+    }
+    /*section 03*/
+    .right-half-circle {
+        height: 113%;
+        width: 53%;
+        bottom: 52%;
+        border-radius: 400px 0 0 400px;
+    }
+    #section3-large-circle {
+        width: 125px;
+        height: 125px;
+        left: 16%;
+        top: 21%;
+    }
+    #section3-small-circle {
+        width: 20px;
+        height: 20px;
+        left: 2%;
+        top: 0%;
+    }
+    .divider3 {
+        height: 35em;
+        border-radius: 4px;
+        right: -35px;
+        top: 24%;
+        border-left: 8px solid #ededed;
+    }
+    .cat {
+        width: 27vw;
+        position: absolute;
+        top: 9%;
+        right: 15px;
+    }
+    .para-asap {
+        font-size: 40px;
+    }
+    .asap-text {
+        font-size: 72px;
+    }
+    .paragraph3-text {
+        font-size: 60px;
+    }
+    .box-para {
+        height: 35px;
+        width: 35px;
+        left: 34%;
+        top: 195px;
+    }
+    .number3 {
+        font-size: 215pt;
+    }
+    .typography3 {
+        font-size: 60px;
+        top: -250px;
+    }
+    .paragraph3 {
+        font-size: 60px;
+        top: -265px;
+    }
+    /*Section 04*/
+    .number4 {
+        font-size: 215pt;
+        margin-left: -47px;
+    }
+    .color-themebox {
+        right: 25%;
+        top: -70px;
+    }
+    .colortext4 {
+        font-size: 65px;
+    }
+    .petcolor4 {
+        font-size: 40px;
+    }
+    .mainbox {
+        left: 36%;
+        top: 165px;
+    }
+    .maintext4 {
+        font-size: 65px;
+    }
+    .colorever4b {
+        font-size: 37px;
+    }
+    .three-circles {
+        top: 295px;
+    }
+    #circle {
+        width: 180px;
+        height: 180px;
+    }
+    #circle2 {
+        width: 180px;
+        height: 180px;
+    }
+    #circle3 {
+        width: 180px;
+        height: 180px;
+    }
+    .suporttext4 {
+        font-size: 65px;
+    }
+    .colorimp4b {
+        font-size: 43px;
+    }
+    .colorcontbox {
+        top: 375px;
+    }
+    .contrast-text {
+        font-size: 30px;
+    }
+    #circ1 {
+        width: 75px;
+        height: 75px;
+    }
+    #circ2 {
+        width: 75px;
+        height: 75px;
+    }
+    #circ3 {
+        width: 75px;
+        height: 75px;
+    }
+    #circ4 {
+        width: 75px;
+        height: 75px;
+    }
+    .othercontbox {
+        top: 375px;
+        left: 300px;
+    }
+    .othercontrast {
+        top: 74px;
+        font-size: 30px;
+        left: 290px;
+    }
+    #circl1 {
+        width: 75px;
+        height: 75px;
+    }
+    #circl2 {
+        width: 75px;
+        height: 75px;
+    }
+    #circl3 {
+        width: 75px;
+        height: 75px;
+    }
+    #circl4 {
+        width: 75px;
+        height: 75px;
+    }
+    .supportbox {
+        left: 36%;
+        top: 65%;
+    }
+    .leftside-text {
+        top: 580px;
+    }
+    .pettext {
+        font-size: 90px;
+    }
+    .petpara {
+        font-size: 37px;
+    }
+    .petfeedbox {
+        margin-left: 22%;
+        width: 45%;
+        bottom: -5%;
+    }
+    .swipe {
+        font-size: 70px;
+    }
+    .arrow {
+        bottom: -110px;
+        left: 27%;
+        font-size: 100px;
+    }
+    /*section 06*/
+    .number6 {
+        font-size: 215pt;
+        margin-left: -49px;
+    }
+    .num6-textbox {
+        bottom: 330%;
+    }
+    .vl {
+        right: 77%;
+        top: 35%;
+        height: 41em;
+        border-left: 8px solid #544a54;
+    }
+    .vl2 {
+        left: 291px;
+        height: 15em;
+        bottom: 32%;
+        border-left: 20px solid #fff;
+    }
+    .pettext6 {
+        font-size: 85px;
+    }
+    .pettext6-2 {
+        font-size: 55px;
+    }
+    .pettext6-3 {
+        font-size: 100px;
+    }
+    .pettext6-4 {
+        font-size: 60px;
+        top: -32px;
+        right: 15%;
+    }
+    .filterimg {
+        bottom: 147%;
+    }
+    .schedule {
+        font-size: 65px;
+    }
+    .calender {
+        font-size: 55px;
+    }
+    .calendertext {
+        bottom: 212%;
+    }
+    .cardimgbox {
+        bottom: 263%;
+    }
+    .subscribeimg {
+        bottom: 267%;
+        margin-left: 31%;
+    }
+    /*section06*/
+    .section6 {
+        margin-top: -970px;
+    }
+    .section6-right-half-circle {
+        width: 13vw;
+        height: 50vh;
+        border-radius: 370px 0 0 370px;
+    }
+    #sec6-small-circle {
+        width: 120px;
+        height: 120px;
+    }
+    .number7 {
+        font-size: 215pt;
+    }
+    .screentext7 {
+        font-size: 75pt;
+    }
+    .screentext7-2 {
+        left: 25%;
+        font-size: 34pt;
+    }
+    .screentext7-3 {
+        font-size: 37pt;
+    }
+    #sec6-aboveapp1-circle {
+        width: 60px;
+        height: 60px;
+        top: 635px;
+    }
+    .half-line-separator {
+        height: 17px;
+        width: 16vw;
+        left: 68%;
+        top: 13%;
+    }
+    .section-7 {
+        bottom: 750px;
+    }
+    .icon {
+        font-size: 120px;
+    }
+    .set {
+        font-size: 120px;
+    }
+    .icon-1024 {
+        right: 60px;
+    }
+    .icon-size1024 {
+        font-size: 50px;
+        top: 240px;
+        right: 320px;
+    }
+    .icon-100 {
+        margin-left: -175px;
+    }
+    .icon-size100 {
+        font-size: 50px;
+        top: 244px;
+        right: 237px;
+    }
+    .icon-72 {
+        margin-left: -100px;
+    }
+    .icon-size72 {
+        font-size: 50px;
+        top: 240px;
+        right: 212px;
+    }
+    .icon-48 {
+        margin-left: -112px;
+    }
+    .icon-size48 {
+        font-size: 50px;
+        top: 236px;
+        right: 195px;
+    }
+    .icon-29 {
+        margin-left: -118px;
+    }
+    .icon-size29 {
+        font-size: 46px;
+        top: 230px;
+        right: 177px;
+    }
+    .thank {
+        font-size: 120px;
+    }
+    .comstar {
+        font-size: 75px;
+    }
+    .footerbox {
+        top: 655px;
+    }
+    #footer {
+        margin-top: -900px;
+    }
+}
+
+
+/*=====================================
+Media qurey At 2800 px 
+=====================================*/
+
+@media screen and (min-width: 2800px) {
+    /*section 1 and 2*/
+    .number1-text-box {
+        position: relative;
+        top: 295px;
+        left: 15px;
+    }
+    .number1 {
+        font-size: 350pt;
+        margin-left: -96px;
+    }
+    .about-app {
+        font-size: 120pt;
+        left: 36%;
+        bottom: 380px;
+    }
+    .about {
+        font-size: 100pt;
+        bottom: 130px;
+    }
+    .about-line {
+        width: 230px;
+        top: 160px;
+        border: 6px solid #4f594a;
+    }
+    .about-app-text {
+        font-size: 66px;
+    }
+    .about-app-text-box {
+        left: 36%;
+        bottom: 270px;
+    }
+    #about-large-circle {
+        left: 86%;
+        top: 260px;
+        width: 60px;
+        height: 60px;
+    }
+    #about-small-circle {
+        width: 25px;
+        height: 25px;
+        left: 96%;
+        top: 150px;
+    }
+    /*section 02 */
+    .num-2-box {
+        bottom: 645px;
+    }
+    .img-box {
+        margin-left: 402px;
+        top: 390px;
+    }
+    .typo-A {
+        top: 71%;
+        left: 45%;
+        font-size: 54vh;
+    }
+    .number2 {
+        font-size: 350pt;
+        margin-left: -84px;
+    }
+    .typography {
+        font-size: 80pt;
+        bottom: 180px;
+    }
+    .styling {
+        font-size: 82pt;
+        bottom: 55px;
+        right: 45%;
+    }
+    .typography-line {
+        border: 6px solid #27cc94;
+        width: 215px;
+        bottom: 400px;
+    }
+    .head-textbox {
+        position: relative;
+        left: 34%;
+        top: -70px;
+    }
+    .headline {
+        font-size: 85pt;
+    }
+    .dosis-text {
+        font-size: 100pt;
+    }
+    .box {
+        height: 47px;
+        width: 48px;
+        top: 78px;
+    }
+    .a-n-text {
+        font-size: 70px;
+    }
+    .column {
+        bottom: 420px;
+        left: 11%;
+        width: 16%;
+    }
+    .a-n-numbers {
+        font-size: 85px;
+    }
+    .divider1 {
+        height: 10em;
+        right: 23%;
+        bottom: 170%;
+        border-left: 10px solid #2c2124;
+    }
+    .divider2 {
+        left: -9%;
+        height: 10em;
+        border-left: 10px solid #2c2124;
+        bottom: 170%;
+    }
+    /*section 03*/
+    .right-half-circle {
+        height: 120%;
+        width: 52%;
+        bottom: 57%;
+        border-radius: 550px 0 0 550px;
+    }
+    .paragraph3-text {
+        font-size: 100px;
+    }
+    .asap-text {
+        font-size: 100px;
+    }
+    .para-asap {
+        font-size: 60px;
+    }
+    .box-para {
+        height: 50px;
+        width: 51px;
+        left: 35%;
+        top: 170px;
+    }
+    .number3 {
+        font-size: 350pt;
+    }
+    .num3-textbox {
+        top: 30px;
+        left: 180px;
+    }
+    .typography3 {
+        font-size: 95px;
+        top: -390px;
+    }
+    .paragraph3 {
+        font-size: 85px;
+        top: -410px;
+    }
+    #left-half-circle {
+        height: 45%;
+        width: 15%;
+        border-radius: 0 220px 220px 0;
+        bottom: 30%;
+    }
+    #section3-large-circle {
+        width: 200px;
+        height: 200px;
+        left: 16%;
+        top: 12%;
+    }
+    #section3-small-circle {
+        width: 40px;
+        height: 40px;
+        left: 0%;
+        top: -18%;
+    }
+    .cat {
+        width: 28vw;
+        position: absolute;
+        top: -1%;
+        right: 15px;
+    }
+    .divider3 {
+        height: 46em;
+        border-radius: 4px;
+        right: -10px;
+        top: 16%;
+        border-left: 12px solid #ededed;
+    }
+    /*section 04*/
+    #right-half-circle-sec4 {
+        border-radius: 450px 0 0 450px;
+    }
+    #sec4-small-circle {
+        width: 50px;
+        height: 50px;
+    }
+    .number4 {
+        font-size: 350pt;
+        margin-left: -66px;
+    }
+    .colortext4 {
+        font-size: 100px;
+    }
+    .petcolor4 {
+        font-size: 65px;
+    }
+    .color-themebox {
+        right: 23%;
+        top: 3%;
+    }
+    .maintext4 {
+        font-size: 100px;
+    }
+    .colorever4b {
+        font-size: 55px;
+    }
+    .three-circles {
+        top: 425px;
+    }
+    #circle {
+        width: 350px;
+        height: 350px;
+    }
+    #circle2 {
+        width: 350px;
+        height: 350px;
+        margin-left: 150px;
+    }
+    #circle3 {
+        width: 350px;
+        height: 350px;
+        margin-left: 330px;
+    }
+    .mainbox {
+        left: 36%;
+        top: 30%;
+    }
+    .supportbox {
+        left: 36%;
+        top: 82%;
+    }
+    .suporttext4 {
+        font-size: 100px;
+    }
+    .colorimp4b {
+        font-size: 65px;
+    }
+    #circ1 {
+        width: 125px;
+        height: 125px;
+    }
+    #circ2 {
+        width: 125px;
+        height: 125px;
+        margin-left: 45px;
+    }
+    #circ3 {
+        width: 125px;
+        height: 125px;
+        margin-left: 75px;
+    }
+    #circ4 {
+        width: 125px;
+        height: 125px;
+        margin-left: 128px;
+    }
+    .colorcontbox {
+        top: 96%;
+    }
+    #circl1 {
+        width: 125px;
+        height: 125px;
+    }
+    #circl2 {
+        width: 125px;
+        height: 125px;
+        margin-left: 40px;
+    }
+    #circl3 {
+        width: 125px;
+        height: 125px;
+        margin-left: 70px;
+    }
+    #circl4 {
+        width: 125px;
+        height: 125px;
+        margin-left: 115px;
+    }
+    .othercontbox {
+        top: 97%;
+        left: 55%;
+    }
+    .contrast-text {
+        font-size: 50px;
+        top: 235px;
+    }
+    .othercontrast {
+        top: 200px;
+        font-size: 50px;
+        left: 55%;
+    }
+    .contrast-text {
+        font-size: 50px;
+        top: 275px;
+    }
+    .pettext {
+        font-size: 150px;
+    }
+    .petpara {
+        font-size: 55px;
+    }
+    .petimage {
+        top: 108%;
+    }
+    .swipe {
+        font-size: 110px;
+    }
+    .arrow {
+        bottom: -163px;
+        left: 27%;
+        font-size: 170px;
+    }
+    .number6 {
+        font-size: 350pt;
+        margin-left: -80px;
+    }
+    .pettext6 {
+        font-size: 120px;
+    }
+    .pettext6-2 {
+        font-size: 85px;
+    }
+    .pettext6-3 {
+        font-size: 150px;
+    }
+    .pettext6-4 {
+        font-size: 100px;
+        top: -32px;
+        right: 15%;
+    }
+    .vl {
+        right: 77%;
+        top: 30%;
+        height: 50em;
+        border-left: 8px solid #544a54;
+    }
+    .vl2 {
+        left: 442px;
+        height: 19em;
+        bottom: 38%;
+        border-left: 30px solid #fff;
+    }
+    .pet-breed-box {
+        bottom: 125px;
+    }
+    .filterimg {
+        bottom: 153%;
+    }
+    .schedule {
+        font-size: 100px;
+    }
+    .calender {
+        font-size: 90px;
+    }
+    .calendertext {
+        bottom: 216%;
+    }
+    .subscribeimg {
+        bottom: 266%;
+        margin-left: 33%;
+    }
+    .section6 {
+        margin-top: -1625px;
+    }
+    .section6-right-half-circle {
+        width: 13vw;
+        height: 50vh;
+        border-radius: 535px 0 0 535px;
+        top: -26%;
+    }
+    #sec6-small-circle {
+        width: 200px;
+        height: 200px;
+    }
+    .number7 {
+        font-size: 350pt;
+        top: 150px;
+    }
+    .screentext7 {
+        font-size: 112pt;
+    }
+    .screentext7-2 {
+        left: 30%;
+        font-size: 51pt;
+    }
+    .screentext7-3 {
+        font-size: 55pt;
+    }
+    .section-7 {
+        bottom: 1200px;
+    }
+    .icon {
+        font-size: 220px;
+    }
+    .set {
+        font-size: 220px;
+    }
+    .icon-size1024 {
+        font-size: 75px;
+        top: 335px;
+        right: 441px;
+    }
+    .icon-size100 {
+        font-size: 75px;
+        top: 340px;
+        right: 340px;
+    }
+    .icon-72 {
+        margin-left: -180px;
+    }
+    .icon-size72 {
+        font-size: 75px;
+        top: 340px;
+        right: 318px;
+    }
+    .icon-48 {
+        margin-left: -180px;
+    }
+    .icon-size48 {
+        font-size: 75px;
+        top: 325px;
+        right: 285px;
+    }
+    .icon-29 {
+        margin-left: -190px;
+    }
+    .icon-size29 {
+        font-size: 75px;
+        top: 320px;
+        right: 266px;
+    }
+    #footer {
+        margin-top: -1300px;
+    }
+    .thank {
+        font-size: 170px;
+    }
+    .comstar {
+        font-size: 120px;
+    }
+    .footerbox {
+        top: 900px;
+    }
+}
