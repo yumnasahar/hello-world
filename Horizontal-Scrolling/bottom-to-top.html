@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.js"></script>
+
+</head>
+<body>
+<div class="mainWrapper">
+      <div class="section" data-anchor="four"><p>#4 section</p></div>
+      <div class="section" data-anchor="three"><p>#3 section</p></div>
+       <div class="section SkipSection" data-anchor="two"><p>#2 section (AUTO SCROLL OVER THIS SECTION)</p></div>
+      <div class="section active" data-anchor="one"><p>#1 section (scroll UP!)</p></div>
+</div>
+<style type="text/css">
+body {
+  background: #556775;
+}
+.mainWrapper {
+  width: 1200px;
+  height: auto!important;
+  margin: auto; 
+  font-size: 3em;
+  color: #fff;
+  background: url('https://images6.alphacoders.com/688/688443.jpg') center center / cover;
+}
+
+.menu {
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+.section {
+    outline: 5px solid red;
+}
+.section p{
+  padding: 30px;
+  background: rgba(52, 49, 49, 0.7);
+}
+
+.buttonClick {
+  position: absolute;
+  background: red;
+  right: 0;
+  top: 50px;
+  width: 400px;
+  height: 50px;
+  z-index: 99999;
+  color: #fff;
+}
+SkipSection {
+  outline: 5px solid cyan;
+  background: cyan;
+}
+.SkipSection p {
+  background: cyan;
+  color: red;
+  padding: 100px;
+}
+</style>
+
+<script>
+//IE < 10 pollify for requestAnimationFrame
+window.requestAnimFrame = function () {
+    return window.requestAnimationFrame ||
+        window.webkitRequestAnimationFrame ||
+        window.mozRequestAnimationFrame ||
+        window.oRequestAnimationFrame ||
+        window.msRequestAnimationFrame ||
+        function (callback) {
+            callback()
+        }
+}();
+
+
+$(document).ready(function () {
+
+    $(".mainWrapper").fullpage({
+
+        anchors: ["four", "three", "two", "one"],
+
+        menu: ".menu",
+
+        onLeave: function (index, nextIndex, direction) {
+            requestAnimFrame(function () {
+                //from #1 to #2 UP direction
+                if (index == 4 && direction == 'up') {
+                    $.fn.fullpage.moveTo(2);
+                }
+
+                //from #3 to #2 DOWN direction
+                else if (index == 2 && direction == 'down') {
+                    $.fn.fullpage.moveTo(4);
+                }
+            });
+        }
+
+    });
+
+
+
+
+});
+</script>
+</body>
+</html>
