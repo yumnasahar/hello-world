@@ -17,7 +17,7 @@ function slide(direction){
 
     if ( direction < 0 && activeSlideNo == lastSlideNo) return;    
     //do not animate forward if slide is at the end     
-    
+
     (direction > 0) ? slide_left(): slide_right();
 }
 
@@ -50,3 +50,4 @@ $(document).ready(function() {
 $(window).resize(function() {
     $('.holder').css({ marginLeft : - 1 * activeSlideNo * $('.slide').width()});                
 });
+
