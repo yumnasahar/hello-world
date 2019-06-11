@@ -53,6 +53,11 @@ $(window).resize(function() {
 
 
 
+//=========================
+    // Vertical Functions
+  //pasting vertical functions
+// ========================
+
 //--- DEFINE a reusable animation function: ---//
 function scrollThere(targetElement, speed) {
   // initiate an animation to a certain page element:
