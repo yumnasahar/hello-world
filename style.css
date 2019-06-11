@@ -1,3 +1,11 @@
+*{
+  margin  : 0;
+  padding : 0;
+  box-sizing: border-box; 
+}
+body{
+  overflow-y: hidden;
+}
 .abc{
   float:  left;
   width:  100%;    
@@ -27,9 +35,29 @@
 #slide-2{  
   background-color: red;   
   }
-#scrollsection{
-background-color: black;}
-.service {
-  width:  100%;
-  height:  100%;
+
+.panel {
+  width: 100%;
+  height: 100%; 
+  text-align: center;
+  font-size: 50px;
+}
+#panel1{
+  background-color: khaki;
+}
+#panel2{
+  background-color: cadetblue;
+
+}
+#panel3{
+  background-color: khaki;
+}
+#panel4{
+  background-color: cadetblue;
+}
+#panel5{
+  background-color: khaki;
+}
+#panel6{
+  background-color: cadetblue;
 }
