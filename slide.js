@@ -1,8 +1,8 @@
 //=======================
     // Horizontal Functions
 // ======================
-
 // keep track of the current slide nb
+
 var activeSlideNo = 0;
 
 // number of slides
@@ -112,34 +112,13 @@ $(window).on('mousewheel', function (e) {
     targetDown = $('#panel3');
   } else if (lastScrollTop === div3y) {
     targetUp = $('#panel2');
-    targetDown = $('#panel4');
-  } else if (lastScrollTop === div4y) {
-    targetUp = $('#panel3');
-    targetDown = $('#panel5');
-  } else if (lastScrollTop === div5y) {
-    targetUp = $('#panel4');
-    targetDown = $('#panel6');
-  } else if (lastScrollTop === div6y) {
-    targetUp = $('#panel5');
-    targetDown = $('#panel6');
+    targetDown = $('#panel3');
   } else if (lastScrollTop < div2y) {
     targetUp = $('#panel1');
     targetDown = $('#panel2');
   } else if (lastScrollTop < div3y) {
     targetUp = $('#panel2');
     targetDown = $('#panel3');
-  } else if (lastScrollTop < div4y) {
-    targetUp = $('#panel3');
-    targetDown = $('#panel4');
-  } else if (lastScrollTop < div5y) {
-    targetUp = $('#panel4');
-    targetDown = $('#panel5');
-  } else if (lastScrollTop < div6y) {
-    targetUp = $('#panel5');
-    targetDown = $('#panel6');
-  } else if (lastScrollTop > div6y) {
-    targetUp = $('#panel6');
-    targetDown = $('#panel6');
   } // end else if
 
   // condition: determine which of targetUp or targetDown to scroll to, based on scrollDirection:
